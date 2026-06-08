@@ -28,15 +28,15 @@ export const HeroSection = () => {
             I specialize in transforming designs into functional, high-performing web applications. Let&apos;s discuss your next project.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <button className="inline-flex items-center gap-2 border-white/15 px-6 h-12 rounded-xl">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-10 relative">
+          <a href="#projects" className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl hover:bg-white/5 transition">
             <span className="font-semibold ">Explore My Work</span>
             <ArrowDown className="size-4" />
-          </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+          </a>
+          <a href="#contact" className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl hover:bg-white/90 transition">
             <span>👋</span>
             <span className="font-semibold">Let&apos;s connect</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
