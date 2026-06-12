@@ -11,9 +11,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Cedric De Smet — Developer Portfolio",
+  title: "Cedric De Smet Developer Portfolio",
   description:
-    "Portfolio of Cedric De Smet — building exceptional digital experiences with Python, Java, CSS and Tailwind.",
+    "Portfolio of Cedric De Smet, building exceptional digital experiences with Python, Java, CSS and Tailwind.",
 };
 
 export default function RootLayout({
