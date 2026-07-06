@@ -1,3 +1,4 @@
+import aliKirmiziBurgerLandingPage from "@/assets/images/ali-kirmizi-burger-landing-page.png";
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
@@ -8,6 +9,18 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
+  {
+    company: "Ali Kırmızı Burger",
+    year: "2024",
+    title: "Interactive Restaurant Website",
+    results: [
+      { title: "Engaging 3D burger experience" },
+      { title: "Bilingual menu (TR/EN)" },
+      { title: "Seamless reservation system" },
+    ],
+    link: "https://cedric-desmet.github.io/ali-kirmizi-burger/#top",
+    image: aliKirmiziBurgerLandingPage,
+  },
   {
     company: "Acme Corp",
     year: "2022",
@@ -81,6 +94,18 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 mb-4 hover:bg-white/90 transition">
+                        <span>Visit Live Site</span>
+                        <ArrowUpRight className="size-4" />
+                      </button>
+                    </a>
+                  )}
                 </div>
                 <div className="relative">
                   <Image
