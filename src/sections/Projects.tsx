@@ -11,7 +11,7 @@ import { Card } from "@/components/Card";
 const portfolioProjects = [
   {
     company: "Ali Kırmızı Burger",
-    year: "2024",
+    year: "2026",
     title: "Interactive Restaurant Website",
     results: [
       { title: "Engaging 3D burger experience" },
