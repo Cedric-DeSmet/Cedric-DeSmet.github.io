@@ -10,15 +10,15 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Ali Kırmızı",
-    position: "Kurucu @ Ali Kırmızı Burger",
-    text: "Cedric, restoranımın web sitesini harika bir seviyeye taşıdı! Hem 3D burger detayı hem de kullanıcı dostu tasarımı sayesinde müşterilerimizden çok olumlu geri dönüşler alıyoruz. Ellerine sağlık!",
-    avatar: memojiAvatar1,
-  },
-  {
     name: "Alex Turner",
     position: "Marketing Manager @ TechStartups",
     text: "Cedric was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    avatar: memojiAvatar1,
+  },
+  {
+    name: "Ali Kırmızı",
+    position: "Kurucu @ Ali Kırmızı Burger",
+    text: "Cedric, restoranımın web sitesini harika bir seviyeye taşıdı! Hem 3D burger detayı hem de kullanıcı dostu tasarımı sayesinde müşterilerimizden çok olumlu geri dönüşler alıyoruz. Ellerine sağlık!",
     avatar: memojiAvatar1,
   },
   {
