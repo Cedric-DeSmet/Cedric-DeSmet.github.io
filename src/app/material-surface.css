@@ -89,3 +89,227 @@ body > header, main, body > footer { position: relative; z-index: 1; }
   .work-snapshots { padding-top: 2rem; }
   .preview-desktop-image, .burger-stage { border-radius: 6px; }
 }
+
+.preview-opening {
+  padding-block:1.5rem 2rem;
+  gap:clamp(2rem,5vw,5rem);
+  align-items:start
+}
+.preview-introduction {
+  padding-top:.75rem
+}
+.preview-introduction h1 {
+  font-size:clamp(3.1rem,4.6vw,4.2rem);
+  line-height:1.12
+}
+.preview-description {
+  margin-top:1.75rem
+}
+.preview-personal-note {
+  margin-top:1.5rem
+}
+.contact-panel {
+  padding:1.75rem;
+  background:#242527ed;
+  border-radius:16px
+}
+.contact-panel h2 {
+  font-size:1.65rem
+}
+.contact-field input,.contact-field textarea {
+  background:#303133;
+  border:1px solid #82817f;
+  box-shadow:none
+}
+.contact-field input:focus-visible,.contact-field textarea:focus-visible {
+  outline:3px solid #efb58e;
+  outline-offset:3px;
+  background:#38393b
+}
+.contact-panel .preview-primary {
+  background:#dfa77f;
+  color:#201b18;
+  border-color:#dfa77f;
+  box-shadow:inset 0 2px 4px #ffffff40,0 6px 18px #00000026
+}
+.contact-panel .preview-primary:hover {
+  background:#edb993;
+  color:#201b18
+}
+.preview-secondary {
+  background:transparent;
+  border-color:#777571;
+  color:#efeeec;
+  box-shadow:none
+}
+.preview-secondary:hover {
+  background:#ffffff0d;
+  color:white
+}
+.work-snapshots {
+  padding-top:1rem
+}
+.work-snapshots>h2 {
+  font-size:1.7rem;
+  margin-bottom:1rem
+}
+.work-snapshots .preview-project {
+  display:flex;
+  flex-direction:column
+}
+.work-snapshots .preview-project-image {
+  order:-1;
+  margin:0 0 1.2rem
+}
+.work-snapshots .preview-project h2 {
+  margin-top:.6rem
+}
+.work-snapshots .preview-project-description {
+  margin-top:.8rem
+}
+.work-snapshots .preview-project-bottom {
+  margin-top:.8rem
+}
+.work-snapshots .preview-project-top {
+  display:flex
+}
+body .contact-panel {
+  background:#242527f2;
+  box-shadow:0 16px 48px #00000020
+}
+.surface-background {
+  background:none
+}
+
+@media(max-width:900px) {
+  .preview-opening {
+  grid-template-columns:1fr;
+  gap:2.25rem
+}
+.contact-panel {
+  max-width:none
+}
+.preview-introduction h1 {
+  max-width:620px
+}
+.preview-description {
+  max-width:600px
+}
+
+}
+
+@media(max-width:540px) {
+  .preview-introduction h1 {
+  font-size:2.85rem
+}
+.preview-opening {
+  padding-top:1rem;
+  gap:2rem
+}
+.contact-panel {
+  padding:1.25rem
+}
+.contact-panel h2 {
+  font-size:1.5rem
+}
+.contact-panel form {
+  gap:1rem
+}
+.preview-description {
+  margin-top:1.5rem
+}
+.work-snapshots>h2 {
+  font-size:1.5rem
+}
+.preview-personal-note {
+  margin-top:1.25rem
+}
+
+}
+
+
+:root {
+  --paper:#393c41;
+  --muted:#dad8d4
+}
+body {
+  background:#393c41
+}
+.preview-header,.direction-preview {
+  --preview-muted:#dad8d4
+}
+.preview-personal-note,.contact-intro,.contact-form-note {
+  color:#dad8d4
+}
+body .contact-panel {
+  background:#303236f2;
+  box-shadow:0 16px 48px #11121620
+}
+.contact-field input,.contact-field textarea {
+  background:#414449;
+  border-color:#97999c
+}
+.contact-field input:focus-visible,.contact-field textarea:focus-visible {
+  background:#494c52
+}
+.preview-secondary {
+  border-color:#a7a7a7
+}
+.work-snapshots .preview-project {
+  margin-top:1rem
+}
+.section-heading h2 {
+  font-size:1.7rem
+}
+.surface-layer {
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0
+}
+.surface-fallback {
+  position:absolute;
+  inset:0;
+  background:url('/surface-desktop.svg') center/cover no-repeat
+}
+.surface-background[data-ready=true]+.surface-fallback {
+  display:none
+}
+
+@media(max-width:700px) {
+  .surface-fallback {
+  background-image:url('/surface-mobile.svg')
+}
+
+}
+
+@media(max-width:540px) {
+  .preview-description {
+  margin-top:1.25rem
+}
+.preview-actions {
+  margin-top:1.25rem
+}
+.preview-personal-note {
+  margin-top:1rem
+}
+.preview-opening {
+  gap:1.5rem;
+  padding-bottom:1.5rem
+}
+.contact-panel form {
+  margin-top:1rem;
+  gap:.875rem
+}
+.contact-field textarea {
+  min-height:90px;
+  height:90px
+}
+.contact-intro {
+  margin-top:.65rem
+}
+.work-snapshots {
+  padding-top:.5rem
+}
+
+}
