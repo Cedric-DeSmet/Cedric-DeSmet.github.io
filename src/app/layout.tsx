@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from 'next/font/google';
 import "./globals.css";
-import { twMerge } from "tailwind-merge";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
@@ -11,9 +10,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Cedric De Smet Developer Portfolio",
+  title: "Cedric De Smet — Independent Website Developer",
   description:
-    "Portfolio of Cedric De Smet, building exceptional digital experiences with Python, Java, CSS and Tailwind.",
+    "Website development and redesign for businesses and independent professionals. Explore selected work and discuss your website project with Cedric De Smet.",
 };
 
 export default function RootLayout({
@@ -24,11 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={twMerge(
-          inter.variable, 
-          calistoga.variable, 
-          "bg-gray-900 text-white antialised font-sans"
-        )}
+        className={`${inter.variable} ${calistoga.variable}`}
       >
         {children}
       </body>

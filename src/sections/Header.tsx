@@ -1,23 +1,17 @@
-export const Header = () => {
-  return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
-      <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
-        <a href="#" className="nav-item">
-          Home
-        </a>
-        <a href="#projects" className="nav-item">
-          Projects
-        </a>
-        <a href="#about" className="nav-item">
-          About
-        </a>
-        <a
-          href="#contact"
-          className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
-        >
-          Contact
+export const Header = () => (
+  <header className="preview-header" id="top">
+    <a href="#main" className="skip-link">Skip to content</a>
+    <div className="preview-container preview-navigation">
+      <a className="preview-name" href="#top" aria-label="Cedric De Smet — home">
+        Cedric De Smet<span aria-hidden="true">.</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Work</a>
+        <a href="#about">About</a>
+        <a href="#project-enquiry">
+          Contact me <span aria-hidden="true">↗</span>
         </a>
       </nav>
     </div>
-  );
-};
+  </header>
+);
