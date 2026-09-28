@@ -79,10 +79,10 @@ nav a:hover { color: var(--accent); }
 .section-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding-block: var(--space); border-top: 1px solid var(--rule); }
 .services { margin-top: var(--space); }
 .section-grid h2 { font-size: clamp(2rem, 3.5vw, 3.3rem); letter-spacing: -.055em; line-height: 1.15; margin-top: 1.2rem; }
-.service-list > div { display: grid; grid-template-columns: 2rem 1fr; gap: .8rem; padding-bottom: 2rem; }
+.service-list > div { display: grid; grid-template-columns: 1fr; gap: .8rem; padding-bottom: 2rem; }
 .service-list > div + div { border-top: 1px solid var(--rule); padding-top: 2rem; padding-bottom: 0; }
 .service-list h3 { font-size: 1.5rem; letter-spacing: -.04em; line-height: 1.1; }
-.service-list p { grid-column: 2; color: var(--muted); font-size: .9375rem; max-width: 440px; }
+.service-list p { grid-column: 1; color: var(--muted); font-size: .9375rem; max-width: 440px; }
 .about-intro { font-size: 1.4rem; line-height: 1.55; letter-spacing: -.025em; }
 .about-content > p + p { color: var(--muted); font-size: .9375rem; margin-top: 1rem; }
 .process-list { list-style: none; padding: 0; margin: 2.5rem 0 0; }
